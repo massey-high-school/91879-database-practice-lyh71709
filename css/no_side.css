@@ -27,8 +27,7 @@ body {
 
 .box {
     padding: 20px;
-    /* border-radius: 10px; */
-    background-color: #ddd;
+    border-radius: 10px;
 }
 
 /* Area colouring... */
