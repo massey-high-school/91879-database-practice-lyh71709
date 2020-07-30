@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato%7cUbuntu" rel="stylesheet"> 
     
     <!-- Edit the name of your style sheet - 'foo' is not a valid name!! -->
-    <link rel="stylesheet" href="css/no_side.css"> 
+    <link rel="stylesheet" href="css/bookstyle.css"> 
     
 </head>
     
@@ -37,3 +37,17 @@
             
             <h1>The Tiny Library</h1>
         </div>    <!-- / banner -->
+        
+    
+    <!-- side bar for searching goes here -->
+    <div class ="box side">
+        <h2>Search | <a class="side" href="showall.php">Show All</a></h2>
+        <i>Type part of a title / author name if desired</i>
+        
+        <hr />
+        
+        Title Search<br />
+        Author Search <br />
+        Genre Search<br />
+        Rating Search
+    </div>
