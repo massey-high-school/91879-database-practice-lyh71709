@@ -45,21 +45,23 @@ $count=mysqli_num_rows($showall_query);
                 <!-- Results go here -->
                 <div class="results">
                 
-                <p>Title: <span class="sub_heading"><?php echo $showall_rs['Title']; ?></span></p>
+                    <p>Title: <span class="sub_heading"><?php echo $showall_rs['Title']; ?></span></p>
+
+                    <p>Author: <span class="sub_heading">author holder</span></p>
+
+                    <p>Genre: <span class="sub_heading">genre holder</span></p>
+
+                    <p>Rating: <span class="sub_heading">rating holder</span></p>
+
+                    <p><span class="sub_heading">Review / Response</span></p>
+
+                    <p>
+                        Review Placeholder    
+                    </p>
                 
-                <p>Author: <span class="sub_heading">author holder</span></p>
-                
-                <p>Genre: <span class="sub_heading">genre holder</span></p>
-                
-                <p>Rating: <span class="sub_heading">rating holder</span></p>
-                
-                <p><span class="sub_heading">Review / Response</span></p>
-                
-                <p>
-                    Review Placeholder    
-                </p>
-                
-            </div> <!-- / end results -->
+                </div> <!-- / end results -->
+            
+            <br />
             
             <?php
                     

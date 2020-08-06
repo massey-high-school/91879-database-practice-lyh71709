@@ -63,7 +63,7 @@ body {
 
 .side {
     grid-area: side;
-    background-color: #3363A8; /* Pale Blue */
+    background-color: #3363A8; /* Blue */
     color: #fff;
 }
 
@@ -93,12 +93,12 @@ h1, h2, h3, h4 {
 /* Side Links */
 a.side{font-weight: bold;  text-decoration: none;}
 a.side:link, .nav a:visited {color: #fff;} /* White */
-a.side:hover {color: #cecfd5; } /* Pale Blue */
+a.side:hover {color: #cecfd5; } /* Darkish White */
 
 /* links in page */
 a {font-weight: bold;}
 a:link{color: #AA0000;} /*dark_red */
-a:visited{color: #111177;} /* dark blue */
+a:visited{color: #fff;} /* White */
 a:hover{color: #000;}    /* Black*/
 
 
@@ -122,12 +122,18 @@ a:hover{color: #000;}    /* Black*/
 /* Sub Heading Formatting */
 .sub_heading {
     font-family: 'Ubuntu', sans-serif;
-    color: #593849; /* purple */
+    color: #F0F0F0; /* White */
     font-weight: bold;
 }
 
-
-
+/* Results Box Formatting */
+.results {
+    background-color: #3363A8;
+    border-radius: 10px;
+    border: 1px solid #000;
+    padding: 5px;
+    color: #fff;
+}
 
 
 
