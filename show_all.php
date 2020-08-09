@@ -47,16 +47,33 @@ $count=mysqli_num_rows($showall_query);
                 
                     <p>Title: <span class="sub_heading"><?php echo $showall_rs['Title']; ?></span></p>
 
-                    <p>Author: <span class="sub_heading">author holder</span></p>
+                    <p>Author: <span class="sub_heading"><?php echo $showall_rs['Author']; ?></span></p>
 
-                    <p>Genre: <span class="sub_heading">genre holder</span></p>
+                    <p>Genre: <span class="sub_heading"><?php echo $showall_rs['Genre']; ?></span></p>
 
-                    <p>Rating: <span class="sub_heading">rating holder</span></p>
+                    <p>Rating:
+                        <span class="sub_heading">
+                        
+                        <?php echo $showall_rs['Rating']; ?>
+                        
+                        <!-- Font Awesome Icon Library -->
+                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                        
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        
+                        </span>
+                    </p>
+                    
+                    <br />
 
                     <p><span class="sub_heading">Review / Response</span></p>
 
                     <p>
-                        Review Placeholder    
+                        <?php echo $showall_rs['Review']; ?>  
                     </p>
                 
                 </div> <!-- / end results -->
