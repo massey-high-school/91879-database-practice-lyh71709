@@ -64,8 +64,28 @@
         
         <hr />
         
-        Title Search<br />
+        <!-- Start of Title Search -->
+        
+        <form method="post" action="title_search.php" enctype="multiart/form-data">
+            
+            <input class="search" type="text" size = "40" value="" required placeholder="Title..." />
+            
+            <input class="submit" type="submit" name="find_title" value ="Search" />
+        
+        </form>
+        
+        <!-- End of Title Search -->
+        
         Author Search <br />
+        
+        
+        
         Genre Search<br />
+        
+        
+        
         Rating Search
+        
+        
+        
     </div>

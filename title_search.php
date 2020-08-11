@@ -3,7 +3,7 @@
 
 $showall_sql="SELECT *
 FROM `2020_L1_Prac_HenLy`
-ORDER BY `2020_L1_Prac_HenLy`.`Title` ASC";
+WHERE `Title` LIKE '%hitch%'";
 $showall_query=mysqli_query($dbconnect, $showall_sql);
 $showall_rs=mysqli_fetch_assoc($showall_query);
 $count=mysqli_num_rows($showall_query);
@@ -13,7 +13,7 @@ $count=mysqli_num_rows($showall_query);
 
         
         <div class="box main">
-            <h2>All Items</h2>
+            <h2>Title search</h2>
             
             <?php 
             

@@ -140,3 +140,8 @@ a:hover{color: #000;}    /* Black*/
 .checked {
   color: orange;
 }
+
+/* form formatting */
+.search {
+    width: 200px;
+}
