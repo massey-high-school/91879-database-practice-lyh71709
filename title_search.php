@@ -1,9 +1,16 @@
 <?php
     include "topbit.php";
 
+// if find button pushed...
+if(isset($_POST['find_title']))
+{
+    
+// Retrieves title and sanitises it.
+$title=test_input(mysqli_real_escape_string($dbconnect,$_POST['title']));
+
 $showall_sql="SELECT *
 FROM `2020_L1_Prac_HenLy`
-WHERE `Title` LIKE '%hitch%'";
+WHERE `Title` LIKE '%$title%'";
 $showall_query=mysqli_query($dbconnect, $showall_sql);
 $showall_rs=mysqli_fetch_assoc($showall_query);
 $count=mysqli_num_rows($showall_query);
@@ -115,6 +122,8 @@ $count=mysqli_num_rows($showall_query);
             } // end else
             
             // if there are results display them
+            
+            } // end isset
             
             ?>
             
