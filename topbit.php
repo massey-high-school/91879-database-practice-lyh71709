@@ -41,8 +41,6 @@
 <body>
     
     <div class="wrapper">
-    
-
         
         <div class="box banner">
             
