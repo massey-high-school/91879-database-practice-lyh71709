@@ -20,7 +20,7 @@ $count=mysqli_num_rows($showall_query);
 
         
         <div class="box main">
-            <h2>genre search</h2>
+            <h2>Genre search</h2>
             
             <?php 
             
