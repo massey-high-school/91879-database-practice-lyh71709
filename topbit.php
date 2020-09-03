@@ -76,8 +76,6 @@
         </form>
         
         <!-- End of Title Search -->
-        <hr />
-        
         
         <!-- Start of Author Search -->
         
@@ -92,17 +90,40 @@
         <!-- End of Author Search -->
         <hr />
         
+        <i>Use the dropdown menus to search by genre or rating</i>
+        <hr />
+        
         
         <!-- Start of Genre Search -->
         
         <form method="post" action="genre_search.php" enctype="multipart/form-data">
             
-            <select name="genre" required>
+            <select class="search" name="genre" required>
                 <option value="" disabled selected>Genre...</option>
-                <option value="Sci Fi">Science Fiction</option>
-                <option value="Humour">Humour</option>
-                <option value="Historical Fiction">Historical Fiction</option>
-                <option value="Non Fiction">Non Fiction</option>
+                <?php 
+                // retrieve unique values in genre column...
+                $genre_sql="SELECT DISTINCT `Genre`
+                FROM `2020_L1_Prac_HenLy`
+                ORDER BY `2020_L1_Prac_HenLy`.`Genre` ASC";
+                $genre_query=mysqli_query($dbconnect, $genre_sql);
+                $genre_rs=mysqli_fetch_assoc($genre_query);
+                
+                do {
+                    
+                    ?>
+                
+                <option value="<?php echo $genre_rs['Genre']; ?>"><?php echo $genre_rs['Genre']; ?></option>
+                
+                <?php
+                    
+                } // end of genre option retrieval
+                
+                while($genre_rs=mysqli_fetch_assoc($genre_query));
+                
+                ?>
+                
+           
+                
             </select>
             
             <input class="submit" type="submit" name="find_genre" value ="&#xf002;" />
@@ -110,8 +131,6 @@
         </form>
         
         <!-- End of Genre Search -->
-        <hr />
-        
         
         <!-- Start of ratings form -->
         
