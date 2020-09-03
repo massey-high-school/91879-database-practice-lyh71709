@@ -33,6 +33,7 @@
     <!-- Edit the link below / replace with your chosen google font -->
     <link href="https://fonts.googleapis.com/css?family=Lato%7cUbuntu" rel="stylesheet"> 
     
+    <link rel="stylesheet" href="css/font-awesome.min.css">
     <!-- Edit the name of your style sheet - 'foo' is not a valid name!! -->
     <link rel="stylesheet" href="css/bookstyle.css"> 
     
@@ -70,7 +71,7 @@
             
             <input class="search" type="text" name="title" size = "40" value="" required placeholder="Title..." />
             
-            <input class="submit" type="submit" name="find_title" value ="Search" />
+            <input class="submit" type="submit" name="find_title" value ="&#xf002;" />
         
         </form>
         
@@ -84,7 +85,7 @@
             
             <input class="search" type="text" name="author" size = "40" value="" required placeholder="Author..." />
             
-            <input class="submit" type="submit" name="find_author" value ="Search" />
+            <input class="submit" type="submit" name="find_author" value ="&#xf002;" />
         
         </form>
         
@@ -104,7 +105,7 @@
                 <option value="Non Fiction">Non Fiction</option>
             </select>
             
-            <input class="submit" type="submit" name="find_genre" value ="Search" />
+            <input class="submit" type="submit" name="find_genre" value ="&#xf002;" />
         
         </form>
         
@@ -117,9 +118,9 @@
         <form method="post" action="rating_search.php" enctype="multipart/form-data">
         
             <select class="half_width" name="amount">
-            <option value="exactly">Exactly...</option>
-            <option value="more" selected>At least...</option>
-            <option value="less">At most...</option>
+                <option value="exactly">Exactly...</option>
+                <option value="more" selected>At least...</option>
+                <option value="less">At most...</option>
             </select>
             
             <select class="half_width" name="stars">
@@ -131,7 +132,7 @@
                 
             </select>
             
-                <input class="submit" type="submit" name="find_rating" value ="Search" />
+                <input class="submit" type="submit" name="find_rating" value ="&#xf002;" />
             
         </form>
         
